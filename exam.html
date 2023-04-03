@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EXAM</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="test">
+    <div class="division"><span class="info">First name: <span id="first-name"></span></span>
+
+    <p class="info"> Last name: <span id="last-name"></span></p>
+    <p class="info">Grade: </p>
+    </div>
+
+    <div class="testcontainer">
+        <div class="questioncontainer">
+            <div class="question">
+                When did Lebanon gain its independence
+            </div>
+            <div class="answers">
+                <label><input type="radio" name="q1" value="0"> 2021</label>
+                <label><input type="radio" name="q1" value="1"> 1943 </label>
+                <label><input type="radio" name="q1" value="0"> 1864 </label>
+                <label><input type="radio" name="q1" value="0"> 1999 </label>
+
+
+            </div>
+        </div>
+        <div class="questioncontainer">
+            <div class="question">
+                What is 1+1
+            </div>
+            <div class="answers">
+                <label><input type="radio" name="q3" value="0"> 3</label>
+                <label><input type="radio" name="q3" value="0"> 99999 </label>
+                <label><input type="radio" name="q3" value="1"> 2 </label>
+                <label><input type="radio" name="q3" value="0"> none of the above </label>
+
+
+            </div>
+
+        </div>
+        <div class="questioncontainer">
+            <div class="question">
+                Who is the current Pope
+            </div>
+            <div class="answers">
+                <label><input type="radio" name="q2" value="1"> Pope Francis </label>
+                <label><input type="radio" name="q2" value="0"> Jean Paul 2 </label>
+                <label><input type="radio" name="q2" value="0"> Jean Paul 1 </label>
+                <label><input type="radio" name="q2" value="0"> Benedict 16 </label>
+
+
+            </div>
+
+        </div>
+        <div class="submit">
+            <button onclick="getGrade" value="submit"> 
+                    Submit
+            </button>
+
+        </div>
+    </div>
+
+
+    <script>    
+        const firstName= localStorage.getItem('first-name');
+         const lastName=localStorage.getItem('last-name');
+         document.getElementById('first-name').textContent=firstName;
+         document.getElementById('last-name').textContent=lastName;
+         function getRadioValue(radioName) {
+            var radios = document.getElementsByName(radioName);
+            for (var i = 0; i < radios.length; i++) {
+                if (radios[i].checked) {
+                return radios[i].value;
+                }
+            }
+            return null;
+        }
+         function getGrade(){
+            let points = new Array;
+            for (let i=0;i<1;i++)
+            {
+                points[i]=getRadioValue("q1")
+                Console.log(points[i]);
+                
+
+            }
+            window.alert("hello");
+        }
+
+     </script>
+
+     
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>E-test</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="styles.css">
+
+      </head>
+
+<body class="backgroundc2">
+  <div class="mainclass">
+   <form id="form" name="LOG IN" method="post" action="file:///D:/CSC360/PROJECT%201/exam.html"  >
+    <input class="formelement" type="text" id="firstname" pattern="(([a-zA-Z]){1,13})" placeholder="First Name" required /><br/>
+    <input class="formelement" type="text" id="lastname" patern='[a-zA-Z]{1-10}' placeholder="Last Name" required /><br/>
+    <input class="formelement" type="email" id="Email" placeholder="Email" required/><br/>
+    <input class="formelement" value="submit" type="submit">  </input>
+  
+   </form>
+  </div>
+   <script>
+      const form= document.getElementById('form');
+      const firstname= document.getElementById('firstname');
+      const lastname=document.getElementById('lastname');
+      form.addEventListener('submit',function(e){
+        e.preventDefault();
+
+          const FirstNamevalue = firstname.value;
+          const LastNamevalue = lastname.value;
+          localStorage.setItem('first-name',FirstNamevalue);
+          localStorage.setItem('last-name',LastNamevalue);
+          window.location.href ="exam.html";
+          })
+    
+      </script>
+   
+    
+    
+
+</body>
+    
+
+
+
+
+
+
+
+
+
+</html>
+

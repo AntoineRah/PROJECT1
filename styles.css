@@ -1,0 +1,84 @@
+.title {
+   justify-content: center;
+
+ 
+}
+
+
+
+.backgroundc1 {
+    background-color: aqua;
+}
+
+.test{
+    background-image: url('background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+div form
+{
+   margin-top: 30vh;
+    
+    
+}
+
+.formelement{
+    width: 300px;
+    height: 50px;
+    margin: 5px;
+    background-color: rgb(94, 94, 243);
+    color: yellow;
+    
+}
+
+.backgroundc2{
+    background-color: blueviolet;
+}
+::placeholder{
+    color: aliceblue;
+}
+
+.info{
+    font-size: 30px;
+    
+}
+
+.division{display: inline;}
+.note{
+display: inline;    text-align: right;
+    
+    
+}
+
+.mainclass{
+   
+    margin-left: 40%;
+
+
+}
+.questioncontainer{
+        margin-bottom: 1%;
+
+}
+.testcontainer{
+    text-align: center;
+    display: relative;
+    margin:4%;
+    
+
+}
+
+.question{
+    font-size: 30px;
+    margin-bottom: 5%;
+
+}
+.answers{
+    font-size:20px ;
+}
+.submit >button{
+    width: 80px;
+    height: 30px;
+}
