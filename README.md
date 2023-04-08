@@ -1,2 +1,3 @@
 # PROJECT1
-file:///D:/CSC360/PROJECT%201/mainweb.html
+This is the link for my project
+file:///D:/CSC360/PROJECT%201/index.html
